@@ -1,13 +1,13 @@
-import React, {useState} from "react"
-import useCounter from "./useCounter"
+import React from "react"
+import Menu from "./Menu"
+import Favorite from "./Favorite"
 
-function App() {   
-    const [number,increment]= useCounter()
-
+function App() {
     return (
         <div>
-            <h1>The count is {number}</h1>
-            <button onClick={increment}>Add 1</button>
+            <Menu />
+            <hr />
+            <Favorite />
         </div>
     )
 }
