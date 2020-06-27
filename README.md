@@ -12,5 +12,5 @@ Runs the program on localhost:3000
 
 
 ## Branches
-Convert themeContext to functional component -  `git checkout b4-convert-themeContext-functional`
-Convert existing render props to customHooks -   `branch b4-turning-toggler-customhooks`
+Convert themeContext to functional component -  `b4-convert-themeContext-functional`
+Convert existing render props to customHooks -   `b4-turning-toggler-customhooks`
