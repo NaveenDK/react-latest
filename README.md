@@ -12,4 +12,4 @@ Runs the program on localhost:3000
 
 
 ## Branches
-Convert themeContext to functional component -  git checkout b4-convert-themeContext-functional
+Convert themeContext to functional component -  `git checkout b4-convert-themeContext-functional`
