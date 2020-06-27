@@ -1,11 +1,15 @@
 import React from "react"
 import Toggler from "./Toggler"
+import useToggler from "./useToggler"
 // render the Toggler inside the Menu, and use the render prop to determine what will get displayed
 // remember to bring in the "goodies" (state and methods) to that function so you can make this work
 
 function Menu(props) {
+
+    const [on, toggle] = useToggler(true);
+   
     return (
-        <Toggler defaultOnValue={true} render={({on, toggle}) => (
+     
             <div>
                 <button onClick={toggle}>{on ? "Hide" : "Show"} Menu </button>
                 <nav style={{display: on ? "block" : "none"}}>
@@ -15,9 +19,8 @@ function Menu(props) {
                     <p><a>Your Stars</a></p>
                     <p><a>Your Gists</a></p>
                 </nav>
-            </div>
-        )}/>
-    ) 
+            </div>)
+   
 }
 
 export default Menu
