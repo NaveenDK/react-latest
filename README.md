@@ -9,3 +9,7 @@ In the project directory, you can run:
 Runs the program on localhost:3000
 
 ## useContext 
+
+
+## Branches
+Convert themeContext to functional component -  git checkout b4-convert-themeContext-functional
