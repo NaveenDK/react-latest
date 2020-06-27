@@ -1,16 +1,18 @@
-import React from 'react';
+import React, {useState} from "react"
 
-import Header from "./components/Header"
-import Button from "./components/Button"
-import './App.css';
-
-function App() {
-  return (
-    <div >
-       <Header/>
-       <Button/>
-    </div>
-  );
+function App() {   
+    const [count, setCount] = useState(0)
+    
+    function increment() {
+        setCount(prevCount => prevCount + 1)
+    }
+    
+    return (
+        <div>
+            <h1>The count is {count}</h1>
+            <button onClick={increment}>Add 1</button>
+        </div>
+    )
 }
 
-export default App;
+export default App
